@@ -1,0 +1,17 @@
+#volver{
+	width: 40px;
+}
+
+.boton{
+	border: 1px solid black;
+	padding: 20px;
+	background-color: rgba(157, 255, 0, 0.514);
+	color: rgb(34, 97, 42);
+	margin-left:120px; 
+	box-shadow: 12px 7px rgba(0, 0, 0, 0.068);
+}
+
+#contenedor{
+	margin-top: 100px;
+	width: 100%;
+}

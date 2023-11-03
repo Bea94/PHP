@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+		<title>Eliminar expedientes</title>
+	</head>
+
+	<body>
+		<a href="../indice.html"><img src="../img/flecha2.png" id="volver"/></a>
+        <br/><br/>
+		<form action="../php/eliminado.php" method="POST">
+			<p>A continuación puede eliminar un expediente completo de cliente con su DNI. Éste campo es requirido obligatoriamente y es la única forma de borrar los datos del cliente. A continuación se debe indicar los motivos de su baja en el campo destinado a ello.</p>
+			<fieldset>
+				<legend><b>Eliminar expediente del servidor</b></legend>
+				<input type="text" name="dni" placeholder="Introduzca DNI" required/><br/><br/>
+				<label for="descripcion"><b>Motivo de la baja</b></label></br>
+				<textarea name="descripcion" cols="50" rows="5" placeholder="Indique el/los motivo/s por los que el cliente desea darse de baja."></textarea></br></br>
+				<input type="submit" value="Eliminar"/>
+				<input type="reset" value="Restaurar campo"/>
+			</fieldset>
+		</form>
+	
+	</body>
+</html>

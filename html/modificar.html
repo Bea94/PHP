@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+			<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+			<title>Moodificar expediente</title>
+	</head>
+
+	<body>
+		<a href="../indice.html"><img src="../img/flecha2.png" id="volver"/></a>
+		<form action="../php/modificado.php" method="POST">
+			<h4>Modificación de datos registrados</h4>
+			
+			<fieldset>
+				<legend>Usuario a actualizar</legend>
+				<h5>Introduzca el dni del usuario que desea modificar</h5>
+				<input type="text" name="dnibuscado" placeholder="Introduzca DNI" required/><br/>
+			</fieldset>
+			</br>
+			
+			<h4>Datos nuevos:</h4>
+
+			<fieldset>
+				<legend>Datos personales</legend>
+				<input type="text" name="dni" placeholder="Introduzca DNI"/><br/><br/>
+				<input type="text" name="nombre" placeholder="Introduzca nombre"/><br/><br/>
+				<input type="text" name="apellidos" placeholder="Introduzca apellidos"/><br/><br/>
+				<input type="text" name="email" placeholder="Introduzca email"/><br/><br/>
+				<input type="text" name="tel" placeholder="Introduzca teléfono" max="9"/><br/><br/>
+				<input type="text" name="provincia" placeholder="Lugar de procedencia"/><br/><br/>
+			</fieldset>
+			</br>
+			<fieldset>
+				<legend>Turismo experiencial</legend>
+				<h4>Indique el número de asistentes:</h4>
+				<label for="paxad">Adultos</label>
+				<input type="text" name="paxad" maxlenght="2" placeholder="nº de adultos">
+				<label for="paxkid">Niños</label>
+				<input type="text" name="paxkid" maxlenght="2" placeholder="nº de niños">
+				<label for="paxpet">Mascotas</label>
+				<input type="text" name="paxpet" maxlenght="2" placeholder="nº de mascotas">
+				<br/><br/>
+
+				<label for="date"><b>Fecha de preferencia:</b></label>
+				<input type="text" name="date" placeholder="DD/MM/AAAA">
+				<br/><br/>
+				
+				<label for="actividad"><b>Actividades a elegir:</b></label>
+				<ul>
+					<li>Cata de vino</li>
+					<li>Kayak por el Mediterráneo</li>
+					<li>Experiencia por el desierto en 4x4</li>
+					<li>Circuito de F3</li>
+					<li>Female solo</li>
+					<li>Caminito del Rey</li>
+					<li>Excursión por el Torcal de Antequera</li>
+					<li>Paseo en globo</li>
+				</ul>
+				<input type="text" name="actividad" placeholder="Caminito del Rey"/>
+				<br/><br/>
+
+				<label for="ppto"><b>Presupuesto previsto:</b></label>
+				<input type="text" name="ppto" placeholder="200 €"/>
+				<br/><br/>
+			</fieldset>
+			<br/>
+			<input type="submit" value="Actualizar"/>
+            <input type="reset" value="Borrar todos los campos"/>
+
+
+		</form>	
+	</body>
+</html>

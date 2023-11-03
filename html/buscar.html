@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+		<title>Buscar expediente</title>
+	</head>
+
+	<body>
+		<a href="../indice.html"><img src="../img/flecha2.png" id="volver"/></a>
+
+		<form action="../php/buscado.php" method="POST">
+
+			<h4>Reglas de búsqueda:</h4>
+
+            <input type="text" name="dni" placeholder="Introduzca DNI"/><br/><br/>
+			<input type="text" name="nombre" placeholder="Introduzca nombre"/><br/><br/>
+			<input type="text" name="apellidos" placeholder="Introduzca apellidos"/><br/><br/>
+            <input type="text" name="email" placeholder="Introduzca email"/><br/><br/>
+			<input type="text" name="tel" placeholder="Introduzca teléfono" max="9"/><br/><br/>
+			<input type="text" name="provincia" placeholder="Lugar de procedencia"/><br/><br/>
+			
+			<h4>Búsqueda por el número de asistentes:</h4>
+			<label for="paxad">Adultos</label>
+			<input type="text" name="paxad" maxlenght="2" placeholder="nº de adultos">
+			<label for="paxkid">Niños</label>
+			<input type="text" name="paxkid" maxlenght="2" placeholder="nº de niños">
+			<label for="paxpet">Mascotas</label>
+			<input type="text" name="paxpet" maxlenght="2" placeholder="nº mascotas">
+			<br/><br/>
+
+			<label for="date"><b>Búsqueda por fecha:</b></label>
+			<input type="text" name="date" placeholder="DD/MM/AAAA">
+			<br/><br/>
+
+			
+			<label for="actividad"><b>Búsqueda por actividades reservadas</b></label>
+			<ul>
+				<li>Cata de vino</li>
+				<li>Kayak por el Mediterráneo</li>
+				<li>Experiencia por el desierto en 4x4</li>
+				<li>Circuito de F3</li>
+				<li>Female solo</li>
+				<li>Caminito del Rey</li>
+				<li>Excursión por el Torcal de Antequera</li>
+				<li>Paseo en globo</li>
+			</ul>
+			<input type="text" name="actividad" placeholder="Escriba actividad"/>
+			<br/><br/>
+
+			<label for="ppto"><b>Presupuesto previsto:</b></label>
+			<input type="text" name="ppto" placeholder="Presupuesto estimado €"/>
+			<br/><br/>
+
+            <input type="submit" value="Buscar registros"/>
+
+			<input type="reset" value="Borrar todos los campos"/>
+
+		</form>	
+	</body>
+</html>
